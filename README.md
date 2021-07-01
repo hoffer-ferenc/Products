@@ -1,35 +1,10 @@
-Ami szükséges: 
---composer update-- (mappában)
--futtatás --php spark serve--
-
-DB: test_ci4
-
-CREATE TABLE `details` (
-                  `id` int(11) NOT NULL AUTO_INCREMENT,
-                  `product_name` varchar(50) COLLATE utf8mb4_hungarian_ci NOT NULL,
-                  `product_number` varchar(50) COLLATE utf8mb4_hungarian_ci NOT NULL,
-                  `description` varchar(255) COLLATE utf8mb4_hungarian_ci NOT NULL,
-                  `vat` int(10) NOT NULL,
-                  `date_record` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                  `stock` int(10) NOT NULL,
-                  `modify_date` datetime NOT NULL,
-                  `modify_amount` int(11) NOT NULL,
-                  PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
-
-INSERT INTO `details` (`id`, `product_name`, `product_number`, `description`,`vat`,`date_record`,`stock`,`modify_date`,`modify_amount`) VALUES
-(16,"Iphone","xdba24","telefon..","27","2021-07-01 01:24:01","12","2021-07-01 01:31:42","0"),
-(17,"Android","zwqdq12","telefon..","10","2021-07-01 01:24:34","24","2021-07-01 01:31:45","12"),
-(18,"Asus","kcz2123","Laptop...","27","2021-07-01 01:25:05","6","2021-07-01 01:31:40","-6"),
-(19,"Gigabyte","sfm213","Alaplap...","10","2021-07-01 01:25:54","30","2021-07-01 01:31:55","18"),
-(20,"Lenovo","bgz654","Laptop...","10","2021-07-01 01:26:26","12","2021-07-01 01:31:47","0");
-
-composer és futtatás után elérhető lesz localhoston illetve http://localhost:8080/index.php/productlist itt is.
+#   Telepítési és futtatási segédlet a text.txt-ben!!
 
 
 
 
 
+#/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 # CodeIgniter 4 Application Starter
 
 Tutorial on codesource.io - [Codeigniter Crud](https://codesource.io/build-a-crud-application-using-codeigniter-4-and-mysql/)
